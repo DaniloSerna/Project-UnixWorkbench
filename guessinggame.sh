@@ -1,6 +1,6 @@
 #!/bin/bash
 
-num_files=$(ls -1 | wc -l)
+num_files=$(ls -1a | wc -l) #Count all the files in the current directory, even hiden files
 echo "Guess the number of files in the current directory:"
 read input
 while [ $input -ne $num_files ]
